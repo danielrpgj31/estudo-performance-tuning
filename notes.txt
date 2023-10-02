@@ -1,5 +1,8 @@
-1. Baixar codigos para stress:
-    a. CPU
-    b. Async pool 
-    c. LIBUV
-    
+1. Montar codigos que estressam CPU e Memoria :
+    a. CPU. findFibNum.js. Validar com profiler. 
+    d. Mem Leak. leak.js. Validado com profiler. 
+
+2. Montar codigos que estressam componentes internos do node
+
+    a. Event Loop
+    b. I/O LIBUV
