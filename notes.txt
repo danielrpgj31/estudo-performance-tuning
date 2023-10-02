@@ -1,0 +1,5 @@
+1. Baixar codigos para stress:
+    a. CPU
+    b. Async pool 
+    c. LIBUV
+    
