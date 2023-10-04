@@ -7,6 +7,6 @@ const delay = (ms) => {
 };
 
 // Simulate a time-consuming operation with delay
-delay(5000); // 5 seconds delay
+delay(500000); // 5 seconds delay
 
 console.log('End of the program');
