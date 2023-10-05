@@ -9,4 +9,10 @@
         b. I/O LIBUV
     1.4 Memory Leak 
     1.5 Microservices
+    1.6 Docker 
+        a. Avaliar um código que consome carga alta de memória a ponto de estourar o limite disponível. 
+           Limite disponível? Maquina host ou Docker? Como ajustar, como monitorar proativamente. 
+        b. Avaliar um código nodejs que tenha alto consumo de CPU. Avaliar impactos no Docker e Host. 
+           Como monitorar e detectar os impactos. 
+    
 
