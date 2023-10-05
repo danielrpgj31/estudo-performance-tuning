@@ -1,6 +1,0 @@
-::1 - - [04/Oct/2023:04:28:44 +0000] "GET / HTTP/1.1" 200 38 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
-::1 - - [04/Oct/2023:04:28:44 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
-::1 - - [04/Oct/2023:14:20:38 +0000] "GET / HTTP/1.1" 200 38 "-" "PostmanRuntime/7.33.0"
-::1 - - [04/Oct/2023:14:20:51 +0000] "GET /whoami HTTP/1.1" 404 145 "-" "PostmanRuntime/7.33.0"
-::1 - - [04/Oct/2023:14:21:02 +0000] "GET /whoami HTTP/1.1" 404 145 "-" "PostmanRuntime/7.33.0"
-::1 - - [04/Oct/2023:14:22:15 +0000] "GET /whoami HTTP/1.1" 404 145 "-" "PostmanRuntime/7.33.0"
