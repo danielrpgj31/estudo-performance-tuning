@@ -18,9 +18,15 @@
 
 2. Ferramentas Open Source APM 
 
+    TODO: APM 
+        Implementar monitoramento de docker, docker swarm e nodejs 
+        Analisar CPU do Host x CPU do container (nodejs), consumo de memória do NodeJS x container Docker 
+        
     a. Node.js Inspector: Esta é uma ferramenta de depuração integrada ao Node.js que permite rastrear o desempenho de sua aplicação e identificar problemas de desempenho. Embora não seja um APM completo, é útil para depurar problemas específicos em seu código Node.js.
 
     b. Prometheus: O Prometheus é uma ferramenta open-source de monitoramento e alerta que é amplamente utilizada para monitorar aplicações Node.js. Você pode usar bibliotecas como o prom-client para instrumentar suas aplicações Node.js e coletar métricas para análise posterior.
+
+        https://prometheus.io/docs/prometheus/latest/installation/
 
     c. Grafana: O Grafana é uma plataforma open-source de visualização e observabilidade que pode ser usada em conjunto com o Prometheus para criar painéis de monitoramento personalizados para suas aplicações Node.js.
 
@@ -29,3 +35,4 @@
     e. Zipkin: O Zipkin é uma ferramenta open-source de rastreamento distribuído que pode ser usada para monitorar aplicações Node.js que operam em ambientes distribuídos.
 
     f. Jaeger: O Jaeger é outra ferramenta open-source de rastreamento distribuído que é adequada para monitorar aplicações Node.js em ambientes distribuídos.
+
