@@ -6,7 +6,22 @@ const delay = (ms) => {
   while (Date.now() - start < ms) {}
 };
 
+setTimeout (() => {
+
+  delay(2000);
+  console.log('setTimeout 1 finished..')
+
+}, 0)
+
+setTimeout (() => {
+
+  delay(0);
+  console.log('setTimeout 2 finished..')
+
+}, 0)
+
+
 // Simulate a time-consuming operation with delay
-delay(500000); // 5 seconds delay
+//delay(500000); // 5 seconds delay
 
 console.log('End of the program');
