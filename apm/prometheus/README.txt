@@ -31,16 +31,18 @@ Volumes & bind-mount
 
 Bind-mount your prometheus.yml from the host by running:
 
+#Executei no meu ambiente (WSL2 ubuntu-22.04)
 docker run \
     -p 9090:9090 \
-    -v /path/to/prometheus.yml:/etc/prometheus/prometheus.yml \
+    -v /home/drjunior_br/dev/src/estudo-performance-tuning/apm/prometheus/prometheus.yaml:/etc/prometheus/prometheus.yml \
+    --add-host host.docker.internal:host-gateway \
     prom/prometheus
 
 Or bind-mount the directory containing prometheus.yml onto /etc/prometheus by running:
 
 docker run \
     -p 9090:9090 \
-    -v /path/to/config:/etc/prometheus \
+    -v /home/drjunior_br/dev/src/estudo-performance-tuning/apm/prometheus/:/etc/prometheus \
     prom/prometheus
 
 Save your Prometheus data
