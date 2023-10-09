@@ -24,6 +24,11 @@
         
     a. Node.js Inspector: Esta é uma ferramenta de depuração integrada ao Node.js que permite rastrear o desempenho de sua aplicação e identificar problemas de desempenho. Embora não seja um APM completo, é útil para depurar problemas específicos em seu código Node.js.
 
+        import { loadavg } from 'node:os'
+        import { cpuUsage, memoryUsage, pid, ppid, platform, uptime, version } from 'node:process'
+        import { monitorEventLoopDelay, PerformanceObserver } from 'node:perf_hooks'
+        import { getHeapStatistics } from 'node:v8'    
+
     b. Prometheus: O Prometheus é uma ferramenta open-source de monitoramento e alerta que é amplamente utilizada para monitorar aplicações Node.js. Você pode usar bibliotecas como o prom-client para instrumentar suas aplicações Node.js e coletar métricas para análise posterior.
 
         https://prometheus.io/docs/prometheus/latest/installation/
