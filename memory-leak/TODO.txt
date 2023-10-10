@@ -1,0 +1,10 @@
+Ajustar Dockerfile para gerar uma imagem que execute o ./src/leak.js
+Objetivo é consumir memória sem descarte para avaliar o estouro de memória em um container por um processo nodejs. 
+
+Setup Container 
+    a. Subir com limite de memória para não impactar no Host 
+
+Avaliar:
+    a. Mensagens de erro da engine e do S.O (Kernel)
+    b. Como monitorar de forma proativa, com cAdvisor (Prometheus)
+    

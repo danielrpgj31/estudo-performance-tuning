@@ -1,0 +1,11 @@
+{
+  "name": "memory-leak",
+  "version": "1.0.0",
+  "description": "Consumes huge memory to monitoring limits of container",
+  "main": "leak.js",
+  "scripts": {
+    "start": "node ./src/leak.js"
+  },
+  "author": "Daniel Ribeiro P G Junior",
+  "license": "ISC"
+}

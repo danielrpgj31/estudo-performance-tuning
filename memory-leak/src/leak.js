@@ -5,7 +5,7 @@ function LeakingClass() {
 
 var leaks = [];
 setInterval(function() {
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 10000; i++) {
     leaks.push(new LeakingClass);
   }
 
