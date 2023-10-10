@@ -1,0 +1,13 @@
+
+#Referencias
+
+(Monitoração de Host Linux)
+https://prometheus.io/docs/guides/node-exporter/
+
+(Monitoração do cluster Docker Swarm)
+https://prometheus.io/docs/guides/dockerswarm/
+
+(Monitorando NodeJS *microservices)
+https://blog.risingstack.com/node-js-performance-monitoring-with-prometheus/
+https://codersociety.com/blog/articles/nodejs-application-monitoring-with-prometheus-and-grafana
+https://github.com/slanatech/swagger-stats

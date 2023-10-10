@@ -42,7 +42,7 @@ Or bind-mount the directory containing prometheus.yml onto /etc/prometheus by ru
 
 docker run \
     -p 9090:9090 \
-    -v /home/drjunior_br/dev/src/estudo-performance-tuning/apm/prometheus/:/etc/prometheus \
+    -v /home/danielrpgj/dev/src/estudo-performance-tuning/apm/prometheus/:/etc/prometheus \
     prom/prometheus
 
 Save your Prometheus data
