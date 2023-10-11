@@ -28,6 +28,8 @@
         import { cpuUsage, memoryUsage, pid, ppid, platform, uptime, version } from 'node:process'
         import { monitorEventLoopDelay, PerformanceObserver } from 'node:perf_hooks'
         import { getHeapStatistics } from 'node:v8'    
+		
+		https://github.com/danielrpgj31/pm2.git
 
     b. Prometheus: O Prometheus é uma ferramenta open-source de monitoramento e alerta que é amplamente utilizada para monitorar aplicações Node.js. Você pode usar bibliotecas como o prom-client para instrumentar suas aplicações Node.js e coletar métricas para análise posterior.
 

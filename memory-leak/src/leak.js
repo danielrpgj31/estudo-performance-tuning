@@ -1,13 +1,11 @@
-// It is important to use named constructors (like the one below), otherwise
-// the heap snapshots will not produce useful outputs for you.
-function LeakingClass() {
-}
+const memoryLeak = () => {
+  const data = [];
+  setInterval(() => {
+    for (let i = 0; i < 10000; i++) {
+      data.push(new Array(1000000).join('x'));
+    }
+    console.log('Memória alocada:', process.memoryUsage().heapUsed / 1024 / 1024, 'MB');
+  }, 1000);
+};
 
-var leaks = [];
-setInterval(function() {
-  for (var i = 0; i < 10000; i++) {
-    leaks.push(new LeakingClass);
-  }
-
-  console.error('Leaks: %d', leaks.length);
-}, 1000);
+memoryLeak();
