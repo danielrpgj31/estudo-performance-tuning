@@ -1,8 +1,18 @@
 Ajustar Dockerfile para gerar uma imagem que execute o ./src/leak.js
 Objetivo é consumir memória sem descarte para avaliar o estouro de memória em um container por um processo nodejs. 
 
-Setup Container 
+Ajustar dockerfile 
+    Incluir mp2 para execução monitorada da app
+
+Build image
+    docker build -t libra-nodejs-memoryleak .
+
+Executar container
     a. Subir com limite de memória para não impactar no Host 
+    docker run --memory 128m -d libra-nodejs-memoryleak
+
+    b. Entrar no container
+    docker exec -it <id container> /bin/bash
 
 Avaliar:
     a. Mensagens de erro da engine e do S.O (Kernel)
