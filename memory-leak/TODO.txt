@@ -15,6 +15,9 @@ Executar container
     docker exec -it <id container> /bin/bash
 
 Avaliar:
-    a. Mensagens de erro da engine e do S.O (Kernel)
-    b. Como monitorar de forma proativa, com cAdvisor (Prometheus)
+    
+    a. Instalar um monitoramento de OS antes de iniciar o app memoryleak
+        OSWatcher, entre outros.
+    b. Mensagens de erro da engine e do S.O (Kernel)
+    c. Como monitorar de forma proativa, com cAdvisor (Prometheus)
     
