@@ -1,6 +1,10 @@
 Ajustar Dockerfile para gerar uma imagem que execute o ./src/leak.js
 Objetivo é consumir memória sem descarte para avaliar o estouro de memória em um container por um processo nodejs. 
 
+
+Host (Bare Metal)
+=================
+
 Ajustar dockerfile 
     Incluir mp2 para execução monitorada da app
 
@@ -15,9 +19,22 @@ Executar container
     docker exec -it <id container> /bin/bash
 
 Avaliar:
-    
+   
     a. Instalar um monitoramento de OS antes de iniciar o app memoryleak
         OSWatcher, entre outros.
     b. Mensagens de erro da engine e do S.O (Kernel)
     c. Como monitorar de forma proativa, com cAdvisor (Prometheus)
     
+
+Host (VirtualBox)
+=====================
+
+Vagrant
+Ubuntu 20.04
+
+Refs
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+https://www.server-world.info/en/note?os=Ubuntu_22.04&p=vagrant&f=1
+
+
+
