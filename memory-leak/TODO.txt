@@ -32,6 +32,15 @@ Host (VirtualBox)
 Vagrant
 Ubuntu 20.04
 
+1. Vagrant 
+
+    a. Install 
+    # sudo apt -y install vagrant
+
+    b. Download image
+    # vagrant box add roboxes/alpine39 --provider virtualbox
+    # vagrant init roboxes/alpine39
+
 Refs
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 https://www.server-world.info/en/note?os=Ubuntu_22.04&p=vagrant&f=1
