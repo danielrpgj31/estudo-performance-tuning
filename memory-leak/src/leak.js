@@ -1,4 +1,4 @@
-function preencheMatriz = (data) => {
+const preencheMatriz = (data) => {
   for (let i = 0; i < 10000; i++) {
     data.push(new Array(1000000).join('x'));
   }

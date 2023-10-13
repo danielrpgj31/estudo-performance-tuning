@@ -37,13 +37,16 @@ Ubuntu 20.04
     a. Install 
     # sudo apt -y install vagrant
 
-    b. Download image
+    b. Download image e subir maquina virtual
     # vagrant box add roboxes/alpine39 --provider virtualbox
-    # vagrant init roboxes/alpine39
+    # #vagrant init roboxes/alpine39 (Qual a diferença com o vagrant up?)
+    # vagrant up 
 
 Refs
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 https://www.server-world.info/en/note?os=Ubuntu_22.04&p=vagrant&f=1
+https://docs.genesys.com/Documentation/System/latest/DDG/InstallationofDockeronAlpineLinux
+
 
 
 
