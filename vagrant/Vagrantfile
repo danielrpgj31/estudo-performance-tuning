@@ -9,10 +9,25 @@ Vagrant.configure("2") do |config|
 
 
   config.vm.define "ubuntu-docker-controller" do |machine_config|
+
     # Configurações específicas para a máquina virtual
     machine_config.vm.box = "roboxes/ubuntu2204"
+
+    # Docker
     machine_config.vm.provision "docker"
+
+    # Nmon
+    machine_config.vm.provision "install nmon",
+      type: "shell",
+      preserve_order: true,
+      inline: "apt install nmon"
+
     # Outras configurações da máquina virtual
+  end
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 768
+    v.cpus = 1
   end
 
   # The most common configuration options are documented and commented below.
