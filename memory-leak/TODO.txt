@@ -13,7 +13,7 @@ Build image
 
 Executar container
     a. Subir com limite de memória para não impactar no Host 
-    docker run --memory 128m -d libra-nodejs-memoryleak
+    docker run -p 8001:8001 --memory 128m -d libra-nodejs-memoryleak
 
     b. Entrar no container
     docker exec -it <id container> /bin/bash

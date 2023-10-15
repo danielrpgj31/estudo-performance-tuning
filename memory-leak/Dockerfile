@@ -6,8 +6,6 @@ COPY package.json .
 
 RUN npm install pm2 -g
 
-RUN apt install 
-
 RUN npm install
 
 COPY . .

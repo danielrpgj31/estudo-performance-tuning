@@ -1,24 +1,17 @@
 const express = require('express');
 
-const preencheMatriz = () => {
-  
-  //Work 3 - Eventloop latency => 5.000,00ms
+const callbackMemoryLeak = () => {
   for (let i = 0; i < maxIterador; i++) {
     data.push(new Array(tamanhoArray).join('x'));
   }
 
   console.log('Memoria alocada:', process.memoryUsage().heapUsed / 1024 / 1024, 'MB');
-
-}
-
-const callbackInterval = () => {
-  preencheMatriz();
 }
 
 const memoryLeak = () => {
 
   //Controle de uso da CPU a partir do controle do tempo para trabalho de join join e cópia da matriz (x)
-  setInterval(callbackInterval, temporizador);
+  setInterval(callbackMemoryLeak, temporizador);
 
 };
 
