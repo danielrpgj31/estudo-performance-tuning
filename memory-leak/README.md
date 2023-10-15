@@ -1,3 +1,6 @@
 # Avaliação Stress Teste NodeJS em container Docker
 
-![Grafico Response Time](image.png)
+## Resultados obtidos
+
+### Grafico Tempo de Resposta
+![Grafico Response Time](response-time.png)
