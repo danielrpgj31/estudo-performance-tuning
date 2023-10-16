@@ -1,18 +1,21 @@
 const express = require('express');
 
 const callbackMemoryLeak = () => {
+
   for (let i = 0; i < maxIterador; i++) {
     data.push(new Array(tamanhoArray).join('x'));
   }
-
   console.log('Memoria alocada:', process.memoryUsage().heapUsed / 1024 / 1024, 'MB');
+
+  //todo: trocar para estrutura de classe para trabalhar com liberação de ponteiro
+  //e analisar uso do GC 
+  data = [];
+
 }
 
 const memoryLeak = () => {
-
   //Controle de uso da CPU a partir do controle do tempo para trabalho de join join e cópia da matriz (x)
   setInterval(callbackMemoryLeak, temporizador);
-
 };
 
 
@@ -34,8 +37,6 @@ const StartServer = async() => {
 
 }
 
-const data = [];
-
 //Work 1 - Eventloop latency => 80.000,00 ms
 //var tamanhoArray = 1000000;
 //var maxIterador = 10000;
@@ -50,6 +51,7 @@ const data = [];
 var tamanhoArray = 10000;
 var maxIterador = 10000;
 var temporizador = 500;
+var data = [];
 
 memoryLeak();
 

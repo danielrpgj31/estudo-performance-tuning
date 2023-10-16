@@ -12,7 +12,7 @@ Build image
     docker build -t libra-nodejs-memoryleak .
 
 Executar container
-    a. Subir com limite de memória para não impactar no Host 
+    a. Subir com limite de memória para não impactar no Host
     docker run -p 8001:8001 --memory 128m -d libra-nodejs-memoryleak
 
     b. Entrar no container
