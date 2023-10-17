@@ -1,4 +1,8 @@
-class Leak {
+/**
+ * @description
+ * 
+ */
+class LeakFat {
 
     data = [];
 
@@ -7,17 +11,36 @@ class Leak {
         for (let i = 0; i < maxIterador; i++) {
           this.data.push(new Array(tamanhoArray).join('x'));
         }
-      
-        console.log('Memoria alocada:', process.memoryUsage().heapUsed / 1024 / 1024, 'MB');
+    }
+}
+
+/**
+ * @description
+*/
+class LeakThin {
+
+    data = [];
+
+    MemoryLeak() {
+        
+        for (let i = 0; i < maxIterador; i++) {
+          this.data.push(new Array(1).join('x'));
+        }
     }
 }
 
 class LeakFactory {
     
-    BoomMemory() {
-        let leak = new Leak();
+    PopulaArrayComObjetoGordo() {
+        let leak = new LeakFat();
         leak.MemoryLeak();
         leakArray.push(leak);
+    }
+
+    RepopulaArrayComObjetoMagro() {
+
+
+
     }
 
 }
@@ -29,7 +52,16 @@ var temporizador = 500;
 
 const leakFactory = new LeakFactory();
 
+//TODO: Chamar 
 setInterval(() => {
-    leakFactory.BoomMemory();
+    leakFactory.PopulaArrayComObjetoGordo();
     console.log('Tamanho da array: ' + leakArray.length);
+    //TODO: Como parar um interval?
+
+    //TODO: Chamar RepopulaArrayComObjetoThin 
+
+    //Verifica o comportamento do uso de memória com a substituição do inicio do leakArray por novos objetos do tipo
+    //LeakThin()
+    console.log('Memoria alocada:', process.memoryUsage().heapUsed / 1024 / 1024, 'MB');
+
 }, temporizador);
