@@ -1,5 +1,5 @@
 const express = require('express');
-const { PerformanceObserver } = require('perf_hooks');
+const MonitorGC = require('./diagnostics/gc');
 
 const callbackMemoryLeak = () => {
 
@@ -19,24 +19,6 @@ const memoryLeak = () => {
   setInterval(callbackMemoryLeak, temporizador);
 };
 
-// Create a performance observer
-const obs = new PerformanceObserver(list => {
-  const entry = list.getEntries()[0];
-  /*
-  The entry is an instance of PerformanceEntry containing
-  metrics of a single garbage collection event.
-  For example:
-  PerformanceEntry {
-    name: 'gc',
-    entryType: 'gc',
-    startTime: 2820.567669,
-    duration: 1.315709,
-    kind: 1
-  }
-  */
-});
-
-
 const StartServer = async() => {
 
   const app = express();
@@ -51,8 +33,6 @@ const StartServer = async() => {
 
   app.get('/geti', (req,res) => {
     
-    // Stop subscription
-    obs.disconnect();
 
     return res.status(200).json({msg: '/geti : I am Customer Service'})
 
@@ -76,9 +56,8 @@ var maxIterador = 10000;
 var temporizador = 500;
 var data = [];
 
-
-// Subscribe to notifications of GCs
-obs.observe({ entryTypes: ['gc'] });
+var monitoramentoGC = new MonitorGC();
+monitoramentoGC.ObserveGC();
 
 memoryLeak();
 
