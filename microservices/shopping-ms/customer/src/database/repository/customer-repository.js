@@ -169,9 +169,6 @@ class CustomerRepository {
         throw new Error('Unable to add to order!');
     }
 
- 
-
-
 }
 
 module.exports = CustomerRepository;
