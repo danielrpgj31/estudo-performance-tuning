@@ -10,8 +10,7 @@ const callbackMemoryLeak = () => {
 
   //todo: trocar para estrutura de classe para trabalhar com liberação de ponteiro
   //e analisar uso do GC 
-  data = [];
-
+  //data = [];
 }
 
 const memoryLeak = () => {
@@ -22,7 +21,6 @@ const memoryLeak = () => {
 const StartServer = async() => {
 
   const app = express();
-
   app.listen(8001, () => {
     console.log(`listening to port 8001`);
   })
@@ -32,10 +30,7 @@ const StartServer = async() => {
   })
 
   app.get('/geti', (req,res) => {
-    
-
     return res.status(200).json({msg: '/geti : I am Customer Service'})
-
   })
 
 }
@@ -56,9 +51,8 @@ var maxIterador = 10000;
 var temporizador = 500;
 var data = [];
 
-var monitoramentoGC = new MonitorGC();
-monitoramentoGC.ObserveGC();
+//var monitoramentoGC = new MonitorGC();
+//monitoramentoGC.ObserveGC();
 
 memoryLeak();
-
 StartServer();
