@@ -1,0 +1,7 @@
+[9990:0x501d0c0]   279614 ms: Scavenge 576.2 (602.7) -> 560.7 (602.7) MB, 3.0 / 0.0 ms  (average mu = 0.983, current mu = 0.956) allocation failure 
+[9990:0x501d0c0]   279640 ms: Scavenge 576.2 (602.7) -> 560.7 (602.7) MB, 2.9 / 0.0 ms  (average mu = 0.983, current mu = 0.956) allocation failure 
+[9990:0x501d0c0]   279663 ms: Scavenge 576.3 (602.7) -> 560.8 (602.7) MB, 2.8 / 0.0 ms  (average mu = 0.983, current mu = 0.956) allocation failure 
+[9990:0x501d0c0]   279684 ms: Scavenge 576.3 (602.7) -> 560.8 (602.7) MB, 2.1 / 0.0 ms  (average mu = 0.983, current mu = 0.956) allocation failure 
+[9990:0x501d0c0]   279710 ms: Scavenge 576.4 (602.7) -> 560.8 (603.0) MB, 2.6 / 0.0 ms  (average mu = 0.983, current mu = 0.956) allocation failure 
+[9990:0x501d0c0]   279735 ms: Scavenge 576.4 (603.0) -> 560.9 (603.0) MB, 2.2 / 0.0 ms  (average mu = 0.983, current mu = 0.956) allocation failure 
+[9990:0x501d0c0]   279759 ms: Scavenge 576.5 (603.0) -> 560.9 (603.0) MB, 2.3 / 0.0 ms  (average mu = 0.983, current mu = 0.956) allocation failure
