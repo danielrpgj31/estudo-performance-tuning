@@ -2,7 +2,7 @@ const express = require('express');
 const promBundle = require('express-prom-bundle');
 const metricsMiddleware = promBundle({ includeMethod: true });
 const app = express();
-const port = 9090;
+const port = 7001;
 
 app.use(metricsMiddleware);
 
