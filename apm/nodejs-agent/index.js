@@ -1,13 +1,10 @@
 const express = require('express');
-const parserLib = require('./parser')
-const promBundle = require('express-prom-bundle');
 const promClient = require('prom-client');
-const ParserFile = require('./parser');
+const promBundle = require('express-prom-bundle');
 const metricsMiddleware = promBundle({ includeMethod: true });
+
 const app = express();
 const port = 7001;
-
-ParserFile();
 
 app.use(metricsMiddleware);
 
