@@ -4,7 +4,7 @@
   "description": "Consumes huge memory to monitoring limits of container",
   "main": "leak.js",
   "scripts": {
-    "start": "node ./src/leak.js"
+    "start": "node --trace-gc ./src/leak.js > trace_gc.log"
   },
   "author": "Daniel Ribeiro P G Junior",
   "license": "ISC",
