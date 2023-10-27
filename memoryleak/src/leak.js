@@ -9,7 +9,7 @@ const callbackMemoryLeak = () => {
 
   //todo: trocar para estrutura de classe para trabalhar com liberação de ponteiro
   //e analisar uso do GC
-  data = [];
+  //data = [];
 };
 
 const memoryLeak = () => {

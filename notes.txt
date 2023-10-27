@@ -36,8 +36,9 @@
         https://prometheus.io/docs/prometheus/latest/installation/
 
     c. Grafana: O Grafana é uma plataforma open-source de visualização e observabilidade que pode ser usada em conjunto com o Prometheus para criar painéis de monitoramento personalizados para suas aplicações Node.js.
-
-    d. Elastic APM: O Elastic APM é parte do ecossistema Elastic (anteriormente conhecido como ELK Stack) e oferece monitoramento de desempenho para aplicações Node.js. Existem bibliotecas de agentes Elastic APM disponíveis para Node.js que permitem a coleta de métricas e rastreamento de transações.
+    
+    d. Elastic APM: O Elastic APM é parte do ecossistema Elastic (anteriormente conhecido como ELK Stack) e 
+    oferece monitoramento de desempenho para aplicações Node.js. Existem bibliotecas de agentes Elastic APM disponíveis para Node.js que permitem a coleta de métricas e rastreamento de transações.
 
     e. Zipkin: O Zipkin é uma ferramenta open-source de rastreamento distribuído que pode ser usada para monitorar aplicações Node.js que operam em ambientes distribuídos.
 
