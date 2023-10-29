@@ -1,4 +1,9 @@
-const { Worker, isMainThread, parentPort, workerData } = require('worker_threads');
+const {
+  Worker,
+  isMainThread,
+  parentPort,
+  workerData,
+} = require("worker_threads");
 
 if (isMainThread) {
   // Este é o thread principal.
@@ -9,20 +14,21 @@ if (isMainThread) {
   // Dividindo a carga de trabalho em várias partes para cada worker.
   for (let i = 0; i < numberOfWorkers; i++) {
     const start = i * chunkSize;
-    const end = (i + 1) === numberOfWorkers ? numbersToCheck : (i + 1) * chunkSize;
+    const end =
+      i + 1 === numberOfWorkers ? numbersToCheck : (i + 1) * chunkSize;
 
     // Cria um novo worker para cada parte da carga de trabalho.
     const worker = new Worker(__filename, {
-      workerData: { start, end }
+      workerData: { start, end },
     });
 
     // Recebe mensagens do worker.
-    worker.on('message', (message) => {
+    worker.on("message", (message) => {
       console.log(`Worker said: ${message}`);
     });
 
     // Envia dados para o worker.
-    worker.postMessage('Start');
+    worker.postMessage("Start");
   }
 } else {
   // Este é o worker.
