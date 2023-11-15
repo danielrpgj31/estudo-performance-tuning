@@ -44,9 +44,9 @@ const StartServer = async () => {
 //var temporizador = 60000;
 
 //Teste 3
-var tamanhoArray = 10000;
-var maxIterador = 10000;
-var temporizador = 500;
+var tamanhoArray = 100;
+var maxIterador = 10;
+var temporizador = 10000;
 var data = [];
 
 //var monitoramentoGC = new MonitorGC();
