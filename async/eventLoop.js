@@ -8,7 +8,7 @@ const delay = (ms) => {
 
 setTimeout (() => {
 
-  delay(2000);
+  delay(20000);
   console.log('setTimeout 1 finished..')
 
 }, 0)
