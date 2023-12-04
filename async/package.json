@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pino": "^8.16.2",
-    "pino-pretty": "^10.2.3"
+    "log4js": "^6.9.1"
   }
 }
