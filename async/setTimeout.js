@@ -9,14 +9,14 @@ const delay = (ms) => {
 };
 
 setTimeout(() => {
-  logger.logInfo("setTimeout 1 - Processing by 7 seconds..");
-  delay(7000);
+  logger.logInfo("setTimeout 1 - Processing at 1000 milisegundos..");
+  delay(10000);
   logger.logInfo("setTimeout 1 - Finished.");
 }, 0);
 
-setTimeout(() => {
+setInterval(() => {
   //delay(0);
-  logger.logInfo("setTimeout 2 - Finished.");
+  logger.logInfo("setTimeout 2 - Executed.");
 }, 5);
 
 // Simulate a time-consuming operation with delay
