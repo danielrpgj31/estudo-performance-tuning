@@ -44,6 +44,10 @@
 
     2.7 Jaeger: O Jaeger é outra ferramenta open-source de rastreamento distribuído que é adequada para monitorar aplicações Node.js em ambientes distribuídos.
 
+    2.8 Kiali
+
+    https://kiali.io/docs/installation/installation-guide/prerequisites/
+
 
 Rastreabilidade
 
